@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Daily Journal</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/radio-buttons.css">
+</head>
+<body>
+  <nav></nav>
+  <div class="master">
+    <header class="header" id="header">
+      <h1>Daily Journal</h1>
+    </header>
+    <article id="form--container"></article>
+    <div id="button--container"></div>
+    <div id="radio--container">
+      <fieldset class="filter">
+        <legend>Filter Journal Entries</legend>
+        <input id="fantastic" type="radio" name="mood" value="Fantastic"> Fantastic<br>
+        <input id="good" type="radio" name="mood" value="Good"> Good<br>
+        <input id="neutral" type="radio" name="mood" value="Neutral"> Neutral<br>  
+        <input id="poor" type="radio" name="mood" value="Poor"> Poor<br>  
+        <input id="murphy-monday" type="radio" name="mood" value="Murphy Monday"> Murphy Monday<br>  
+        <input id="all" type="radio" name="mood" value="All"> Display All<br>  
+      </fieldset>
+    </div>
+    <article class="entryLog"></article>
+  </div>
+  <!-- scripts  -->
+  <script src="scripts/variableReferences.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/entryComponent.js"></script>
+  <script src="scripts/entriesDOM.js"></script>
+  <script src="scripts/formBuilder.js"></script>
+  <script src="scripts/entriesCache.js"></script>
+  <script src="scripts/journal.js"></script>
+  <script src="scripts/form-validation.js"></script>
+  <script src="scripts/radio-buttons.js"></script>
+</body>
+</html> 

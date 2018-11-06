@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+nav {
+  height: 50px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.master {
+  width: 960px;
+  min-height: calc(100vh - 50px); /* 100vh - navbar height */
+  margin: 0 auto;
+  padding: 25px;
+}
+
+#form--container {
+  height: 250px;
+  width: 500px;
+  margin: 10px auto 0 auto;
+}
+
+#button--container {
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 0 0 0;
+}
+
+.entryLog {
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto 10px auto;
+}
+
+#radio--container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  /* height: 40px; */
+}

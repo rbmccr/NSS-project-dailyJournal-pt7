@@ -1,0 +1,43 @@
+nav {
+  background-color: maroon;
+  color: white;
+}
+
+.master {
+  background-color: rgb(252, 245, 236);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 500px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form[class="entry--form"] fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: none;
+}
+
+.entry--form {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.post {
+  padding: 10px;
+}
+
+.entry--posted {
+  margin: 20px 0;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
