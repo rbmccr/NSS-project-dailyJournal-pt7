@@ -1,10 +1,16 @@
+body {
+  background-color: #c9c2ba;
+}
+
 nav {
   background-color: maroon;
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .master {
-  background-color: rgb(252, 245, 236);
+  background-color: rgb(252, 245, 236); /* #fcf5ec */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .header {
@@ -40,4 +46,5 @@ form[class="entry--form"] fieldset {
   padding: 5px;
   border: 1px solid black;
   border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
