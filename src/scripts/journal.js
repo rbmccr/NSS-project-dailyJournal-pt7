@@ -24,20 +24,7 @@ function activateButton() {
             entry: inputs[2],
             moodId: inputs[3]
         };
-        fetch("http://localhost:3000/journalEntries", {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json"
-          },
-          body: JSON.stringify(journalEntryObject)
-
-        /* ---------------- FIX ISSUE HERE ----------------- 
-          - renew cache here?
-          - move post function to data.js
-          - attribute moodId to mood label by fetching entries
-        */
-
-        }).then(jsonData => jsonData.json())
+        API.postEntryThenGetEntry(journalEntryObject)
         //display new journal entry on page
         .then(data => {
             let holdMyObject = []; //holds single object
@@ -48,6 +35,6 @@ function activateButton() {
         dateInput.value = "";
         conceptInput.value = "";
         entryInput.value = "";
-        moodInput.value = "Fantastic";
+        moodInput.value = 1;
     });
 }

@@ -77,6 +77,13 @@
       "entry": "Daily Journal Pt 9",
       "moodId": 3,
       "id": 8
+    },
+    {
+      "date": "2018-11-07",
+      "concept": "Finished DJ Part 9",
+      "entry": "Ousama helped me write the last line of code to finish Daily Journal Part 9",
+      "moodId": 1,
+      "id": 9
     }
   ]
 }
