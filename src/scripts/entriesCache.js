@@ -20,7 +20,7 @@ function renderCachedEntries(entries, RadioButtonValue) {
       container.innerHTML += makeJournalEntryComponent(journalEntry);
     });
   } else { // otherwise, the id is the radio button clicked, and the array should be filtered by mood
-    let filteredArr = entries.filter(entry => entry.mood.toLowerCase() === RadioButtonValue.toLowerCase())
+    let filteredArr = entries.filter(entry => entry.mood.label.toLowerCase() === RadioButtonValue.toLowerCase())
     filteredArr.forEach(journalEntry => {
       container.innerHTML += makeJournalEntryComponent(journalEntry);
     });

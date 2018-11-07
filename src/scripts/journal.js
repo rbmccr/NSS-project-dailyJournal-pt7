@@ -7,7 +7,7 @@ function activateButton() {
         let idx0 = dateInput.value;
         let idx1 = conceptInput.value.slice(0,20); //conceptInput only takes 20 characters
         let idx2 = entryInput.value;
-        let idx3 = moodInput.value;
+        let idx3 = Number(moodInput.value); //ensures value is not treated as string
 
         inputs = [idx0, idx1, idx2, idx3];
         //if any of the inputs have profanity, don't meet the regex, are blank, or are undefined, don't move on the the POST
@@ -22,16 +22,22 @@ function activateButton() {
             date: inputs[0],
             concept: inputs[1],
             entry: inputs[2],
-            mood: inputs[3]
-        }
+            moodId: inputs[3]
+        };
         fetch("http://localhost:3000/journalEntries", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(journalEntryObject)
-        })
-        .then(jsonData => jsonData.json())
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify(journalEntryObject)
+
+        /* ---------------- FIX ISSUE HERE ----------------- 
+          - renew cache here?
+          - move post function to data.js
+          - attribute moodId to mood label by fetching entries
+        */
+
+        }).then(jsonData => jsonData.json())
         //display new journal entry on page
         .then(data => {
             let holdMyObject = []; //holds single object

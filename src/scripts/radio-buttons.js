@@ -30,7 +30,7 @@ radioContainer.addEventListener("click", (e) => {
         radioButtonClicked = radioButtonCollection[i]; // assign radio button to Clicked variable for access to value property
         container.innerHTML = ""; // empty entryLog container
         // filter entries by mood by comparing entry object's mood property with value of button clicked
-        renderCachedEntries(cache.filter(entry => entry.mood.toLowerCase() === radioButtonClicked.value.toLowerCase()));
+        renderCachedEntries(cache.filter(entry => entry.mood.label.toLowerCase() === radioButtonClicked.value.toLowerCase()));
       } else if (e.target.id === "all") { //else if will render all entries
         container.innerHTML = "";
         renderCachedEntries(cache);
