@@ -5,7 +5,7 @@ const makeJournalEntryComponent = function(journalEntry) {
       <h2>${journalEntry.concept}</h1>
       <hp>${journalEntry.date}</p> 
       <p>${journalEntry.entry}</p>
-      <footer>Mood: ${journalEntry.mood}</footer>
+      <footer>Mood: ${journalEntry.mood.label}</footer>
     </section>
   `
 }
